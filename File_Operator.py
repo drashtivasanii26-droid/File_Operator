@@ -9,7 +9,7 @@ class JournalManager:
             "journal.txt"
         )
 
-    # 1. Add a new journal entry
+# 1. Add a new journal entry
     def add_entry(self):
         try:
             entry = input("Enter your journal entry: ")
@@ -23,7 +23,7 @@ class JournalManager:
         except OSError as e:
             print("Error: Unable to write to the journal file.", e)
 
-    # 2. View all journal entries
+# 2. View all journal entries
     def view_entries(self):
         try:
             with open(self.filename, "r", encoding="utf-8") as file:
@@ -42,7 +42,7 @@ class JournalManager:
         except PermissionError:
             print("Error: Permission denied!")
 
-    # 3. Search for an entry
+# 3. Search for an entry
     def search_entry(self):
         keyword = input("Enter a keyword or date to search: ")
 
@@ -71,7 +71,7 @@ class JournalManager:
         except PermissionError:
             print("Error: Permission denied!")
 
-    # 4. Delete all entries
+# 4. Delete all entries
     def delete_entries(self):
         if not os.path.exists(self.filename):
             print("No journal entries to delete.")
@@ -94,7 +94,7 @@ class JournalManager:
         else:
             print("Deletion cancelled.")
 
-    # 5. Exit program
+# 5. Exit program
     def exit_program(self):
         print("Thank you for using Personal Journal Manager. Goodbye!")
         raise SystemExit

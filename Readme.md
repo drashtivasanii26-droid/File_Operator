@@ -1,4 +1,4 @@
-# File_Operator
+#  Personal Journal Manager: File Operator
 
 * **Author:** Drashti Vasani
 
@@ -219,6 +219,6 @@ The Personal Journal Manager demonstrates how Python can be used to create a sim
 
 ---
 
-                                                            ⭐ **Thank you** ⭐
+                                ⭐ **Thank you** ⭐
 
 ---
